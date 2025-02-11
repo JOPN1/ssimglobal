@@ -142,7 +142,7 @@
             var calendarEl = document.getElementById('churchCalendar');
 
             var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: window.innerWidth < 768 ? 'listMonth' : 'dayGridMonth', 
+                initialView: window.innerWidth < 600 ? 'listMonth' : 'dayGridMonth', 
                 height: '75vh', // Makes it fit within the section
                 headerToolbar: {
                     left: 'prev,next today',
