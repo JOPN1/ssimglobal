@@ -142,12 +142,12 @@
             var calendarEl = document.getElementById('churchCalendar');
 
             var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: window.innerWidth > 0 ? 'listMonth' : 'dayGridMonth', 
-                height: '70vh', // Makes it fit within the section
+                initialView: window.innerWidth < 500px ? 'listMonth' : 'dayGridMonth', 
+                height: '75vh', // Makes it fit within the section
                 headerToolbar: {
                     left: 'prev,next today',
                     center: 'title',
-                    right: window.innerWidth > 0 ? 'listMonth' : 'dayGridMonth,listMonth'
+                    right: window.innerWidth < 500px ? 'listMonth' : 'dayGridMonth,listMonth'
                 },
                 events: [
                     { title: 'New Year Service', start: '2025-01-01' },
